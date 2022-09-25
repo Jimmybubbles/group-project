@@ -1,3 +1,46 @@
+//card 2 load content without showing the cards
+
+// when the page loads hide the firstcard.
+
+$(window).ready(function() {
+    $("#firstcard").hide();
+});
+
+// window.onload = function() {
+//     document.getElementById('#firstcard');
+    
+//   };
+
+
+//when genbutton pressed add the class show to the firstcard.
+
+$("#Genbutton").on("click", function() {
+    $("#firstcard").show();
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// this is the map api and leafletjs code for creating and populating map page.
+
+
+
 const apiKey = 'pk.eyJ1IjoiamltbXlkZXYiLCJhIjoiY2w4ZTd4ZzdxMDNkbDNvbDgxMXFwZ2ZreCJ9.G_1A1hhq9qUgepvJ7ltbvQ';
 
 const destination = ([-37.21255068945561, 142.39814979780982])
