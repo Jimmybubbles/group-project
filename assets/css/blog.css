@@ -29,5 +29,15 @@ h1 {
 }
 
 body {
-    background-color: green; 
+    background-color: lightgrey; 
+}
+
+/* center the form and submit button */
+.pure-form .pure-form-aligned {
+    margin: 0 auto;
+}
+
+/* center the submit button */
+.pure-form .pure-form-aligned .pure-controls {
+    text-align: center;
 }

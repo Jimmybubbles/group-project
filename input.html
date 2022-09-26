@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User input</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/input.css"/>
+</head>
+<body>
+    <form class="pure-form pure-form-aligned">
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="aligned-name">Title</label>
+                <input type="text" id="aligned-name" class="pure-input-rounded" placeholder="Title" />
+            </div>
+            <div class="pure-control-group">
+                <label for="aligned-body">How was your hike?</label>
+                <textarea class="pure-input-rounded" placeholder="How was your hike?"></textarea>
+            </div>
+            <div class="pure-control-group">
+                <label for="aligned-name">Name</label>
+                <input type="name" id="name" class="pure-input-rounded" placeholder="Name" />
+            </div>
+            <div class="pure-control-group">
+                <label for="aligned-date">Date</label>
+                <input type="date" id="aligned-date" class="pure-input-rounded" placeholder="Date" />
+            </div>
+                <label for="multi-state">Which did you complete?</label>
+                <select id="multi-state" class="pure-input-1-4 pure-input-rounded">
+                    <option>Cape Woolamai Walk</option>
+                    <option>Grampians 90mile Beach</option>
+                    <option>Keppel Lookout Trail</option>
+                    <option>Werribee Gorge State Park Circuit</option>
+                </select>
+            </div>
+            
+            <div class="pure-controls">
+                <button type="submit" class="pure-button pure-button-primary pure-input-rounded">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+    
+    
+</body>
+</html>
