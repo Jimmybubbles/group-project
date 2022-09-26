@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    height: 70px;
+}
+.card-body {
+    margin: 0 auto;
+    width: 33%;
+    border: 2px solid black;
+    text-align: center;
+    background-color: white;
+    height: fit-content;
+}
+
+/* blog posts have a max width of 800px */
+/* blog posts have padding top and bottom of 20px */
+.blog-post {
+    max-width: 800px;
+    padding: 20px 0;
+}
+
+body {
+    background-color: green; 
+}
