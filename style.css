@@ -34,3 +34,10 @@ header {
   width: 100%;
 }
 
+#map { 
+  height: 600px;
+  width: 400px;
+  margin:5rem auto
+}
+
+
