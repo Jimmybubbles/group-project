@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <!-- navigation bar -->
     <div class="pure-menu pure-menu-horizontal">
         <ul class="pure-menu-list">
             <li class="pure-menu-item">
@@ -38,8 +39,10 @@
             </div>
         </ul>
     </div>
+    <!-- Background image with search bar -->
     <section class="background">
-        <img src="./assets/images/greenery.png" alt="Backgroundimage" style="width: 100%;height:10%;margin: 0;opacity: 40%;">
+        <img src="./assets/images/greenery.png" alt="Backgroundimage"
+            style="width: 100%;height:10%;margin: 0;opacity: 40%;">
         <div class="container">
             <input type="text" id="box" placeholder="Search Location..." class="search__box">
             <i class="fas fa-search search__icon" id="icon" onclick="toggleShow()"></i>
@@ -49,26 +52,24 @@
 
 
     <br>
+    <!-- cards to select levels -->
+    <section>
+        <div class="cardlevel">
+            <img id="hike" src="./assets/images/levels.jpg" ; width="600px" height="325px">
+            <h3 class="levelText"><strong>Levels</strong></h3>
+            <p class="levelPara">Set the level of your preferred hiking to Easy, Intermediate and Advance. This
+                feature
+                is designed for beginners to professional hikers. </p>
+            <button class="button-secondary pure-button" onclick="goToWorkpage()"> Select Level </button>
 
-    <div class="cardlevel">
-        <section>
-            <div>
-                <img id="hike" src="./assets/images/levels.jpg" ; width="600px" height="325px">
-                <h3 class="levelText"><strong>Levels</strong></h3>
-                <p class="levelPara">Set the level of your preferred hiking to Easy, Intermediate and Advance. This
-                    feature
-                    is designed for beginners to professional hikers. </p>
-                <button class="button-secondary pure-button">Select Level</button>
+        </div>
+    </section>
 
-            </div>
-        </section>
-    </div>
-
-    <!-- <script>add the location to next page
+    <script>
         function goToWorkpage() {
-            location.replace("")
+            location.replace("https://jimmybubbles.github.io/group-project/levels.html")
         }
-    </script> -->
+    </script>
 
 </body>
 

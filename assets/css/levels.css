@@ -4,7 +4,7 @@ h2 {
     font-family: 'Combo', cursive;
     font-weight: bold;
   }
-  
+  /* navigation bar */
   .pure-menu-list{
     list-style-type: none;
     margin: 0;
@@ -39,24 +39,24 @@ h2 {
   }
 
 
-
+/* card that shows level */
 .cardLevels {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 400px;
     height: 450px;
     margin: auto;
     text-align: center;
-    /* font-family: arial; */
-    background-color: #4f7942;
+    background-color: white;
     margin-top: 200px;
 
 }
+/* card buttons to select different levels */
 .button {
     border: none;
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: #000;
+    background-color: #48abe0;
     text-align: center;
     cursor: pointer;
     width: 60%;
@@ -67,4 +67,5 @@ h2 {
 
 .button:hover {
     opacity: 0.8;
+    background-color:goldenrod ;
 }
