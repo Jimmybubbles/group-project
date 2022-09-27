@@ -1,14 +1,14 @@
 h2 {
   text-align: center;
-  font-size:32px;
+  font-size: 32px;
   font-family: 'Combo', cursive;
   font-weight: bold;
 }
 
-.pure-menu-list{
+.pure-menu-list {
   list-style-type: none;
   margin: 0;
-  padding:0px;
+  padding: 0px;
   overflow: hidden;
   background-color: white;
   position: fixed;
@@ -20,6 +20,7 @@ h2 {
   align-items: center;
 
 }
+
 li {
   float: right;
   margin-right: 20px;
@@ -37,163 +38,132 @@ li a:hover:not(.active) {
   background-color: transparent;
   color: #48abe0;
 }
-.search {
-  width: 100%;
-  height:50%;
-  background-color: #D0F5F8;
-  opacity:60%;
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  box-sizing: inherit;
 }
-form.example button {
-  float: left;
-  width: 20%;
+
+img{
+  object-fit: cover;
+  
+  
+
+
+}
+
+.container {
+  width: 400px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: black;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4rem;
   padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none;
-  cursor: pointer;
 }
 
-form.example button:hover {
-  background: #0b7dda;
-}
-
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-/* Slideshow container */
-.slideshow-container {
-  max-width: auto;
+.search__box {
+  float: left;
+  width: 0;
+  height: 2.5rem;
+  background: none;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
   position: relative;
-  margin: auto;
-  margin-top: 500px;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
+  opacity: 1;
+  transition: all .75s ease-in;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+.search__icon {
+  box-sizing: border-box;
+  float: right;
+  font-size: 1.5rem;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  margin-left: .8rem;
+  margin-top: 0;
+  cursor: pointer;
+  position: absolute;
+  color: #fa983a;
+  transition: all .25s ease-in;
+  padding: .7rem;
+  border-radius: 50%;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.container:hover > .search__box {
+  width: 85%;
+  padding: 0 1rem;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.container:hover > .search__icon {
+  background-color: #eee;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.show {
+  width: 85%;
+  border: 1px solid red;
 }
 
-/* 
-.card {
-    margin-top: 1000px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    height: 400px;
-    margin: auto;
-    text-align: center;
-    background-color: #4f7942;
-
-}
-.card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 60%;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: 50px;
-}
-
-.card button:hover {
-    opacity: 0.8;
+#search-box {
+  background: #eee;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+  border: 0 none;
+  width: 160px;
 } */
 
-/* Next & previous buttons */
-/* .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -175px;;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  } */
-  
-  /* Position the "next button" to the right */
-  /* .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  } */
-  
-  /* On hover, add a black background color with a little bit see-through */
-  /* .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  } */
+.cardlevel {
+  position: static;
+  height: 375px;
+  background-color: aliceblue;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 2px #f6f6f6
+}
+
+img {
+  border-radius: 10px;
+  margin-left: 40px;
+  margin-top: 27px;
+}
+
+.levelText {
+  color: black;
+  font-size: 36px;
+
+  margin-left: 950px;
+  margin-top: -300px;
+}
+
+.levelPara {
+  margin-left: 725px;
+  color: black;
+  margin-right: 80px;
+  margin-top: -5px;
+  font-size: 24px;
+
+}
+
+.button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin-left: 900px;
+  width: 200px;
+  height: 40px;
+  background-color: #48abe0;
+  margin-top: 70px;
+  font-size: 20px;
+}
