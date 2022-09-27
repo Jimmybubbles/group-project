@@ -46,14 +46,3 @@ function init() {
 }
 init();
 
-// blog information is shown in a list
-for (var i = 0; i < localStorage.length; i++) {
-    var key = localStorage.key(i);
-    var value = localStorage.getItem(key);
-    var list = document.getElementById("list");
-    var listItem = document.createElement("li");
-    listItem.textContent = key + " = " + value;
-    list.appendChild(listItem);
-}
-
-

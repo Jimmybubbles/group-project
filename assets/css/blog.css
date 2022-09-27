@@ -172,7 +172,12 @@ h2 {
 
   form {
     text-align: center;
-    align-items: center;
-    /* make each user input the same size */
-    width: 100%;
+    padding-right: 12%;
+    padding-top: 2%;
+    background-color: lightgrey;
+  }
+
+  .card{
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
