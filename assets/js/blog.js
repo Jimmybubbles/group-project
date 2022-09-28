@@ -46,13 +46,62 @@ function init() {
 }
 init();
 
-// blog information is shown in a list
-for (var i = 0; i < localStorage.length; i++) {
-    var key = localStorage.key(i);
-    var value = localStorage.getItem(key);
-    var list = document.getElementById("list");
-    var listItem = document.createElement("li");
-    listItem.textContent = key + " = " + value;
-    list.appendChild(listItem);
-}
 
+/* Attempt to save multiple user blogs to local storage
+
+    var title = document.getElementById("title");
+    var body = document.getElementById("body");
+    var date = document.getElementById("date");
+    var map = document.getElementById("multi-state");
+    var name = document.getElementById("name");
+    var blog = [];
+
+    function renderBlog() {
+        blog.innerHTML = "";
+        blogCountSpan.textContent = blog.length;
+
+        for (var i = 0; i < blog.length; i++) {
+            var blog = blog[i];
+
+            var li = document.createElement("li");
+            li.textContent = blog;
+            li.setAttribute("data-index", i);
+
+            var button = document.createElement("button");
+            button.textContent = "Complete ✔️";
+
+            li.appendChild(button);
+            blogList.appendChild(li);
+        }
+    }
+
+    function init() {
+        var storedBlog = JSON.parse(localStorage.getItem("blog"));
+
+        if (storedBlog !== null) {
+            blog = storedBlog;
+        }
+
+        renderBlog();
+    }
+
+    function storeBlog() {
+        localStorage.setItem("blog", JSON.stringify(blog));
+    }
+
+    blogForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        var blogText = blogInput.value.trim();
+
+        if (blogText === "") {
+            return;
+        }
+
+        blog.push(blogText);
+        blogInput.value = "";
+
+        storeBlog();
+        renderBlog();
+    });
+*/
