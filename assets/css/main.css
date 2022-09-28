@@ -52,6 +52,7 @@ img{
 
 
 }
+/* search bar */
 
 .container {
   width: 400px;
@@ -121,7 +122,7 @@ img{
   border: 0 none;
   width: 160px;
 } */
-
+/* cards to select levels */
 .cardlevel {
   position: static;
   height: 375px;
@@ -155,7 +156,7 @@ img {
   font-size: 24px;
 
 }
-
+/* select level button */
 .button-secondary {
   color: white;
   border-radius: 4px;
