@@ -11,6 +11,8 @@ following the user completing the hike they are then asked to input their detail
 
 # link to working application
 
+https://jimmybubbles.github.io/group-project/
+
 # screenshot of application
 
 ![index1](https://user-images.githubusercontent.com/110278837/192962255-a652bfc4-a547-42b6-9335-643adf7bd482.png)
