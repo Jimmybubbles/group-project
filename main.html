@@ -15,59 +15,67 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css"
+        integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
 
     <title>Trail Mix</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
 <body>
-    <!-- navigation bar -->
-    <div class="pure-menu pure-menu-horizontal">
-        <ul class="pure-menu-list">
-            <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">Login/Sign Up</a>
-            </li>
-            <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">Explore</a>
-            </li>
-            <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">About</a>
-            </li>
-            <div id="Logo">
-                <h2 style=" color:black;">Trail-Mix</h2>
+    <header>
+        <div class="pure-g">            
+            <div class="pure-u-1">
+                <h2>Trail-Mix</h2>
             </div>
-        </ul>
-    </div>
-    <!-- Background image with search bar -->
-    <section class="background">
-        <img src="./assets/images/greenery.png" alt="Backgroundimage"
-            style="width: 100%;height:10%;margin: 0;opacity: 40%;">
+            <div class="pure-u-1">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">Login/Sign Up</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="." class="pure-menu-link">Explore</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="hero"></div>
         <div class="container">
             <input type="text" id="box" placeholder="Search Location..." class="search__box">
             <i class="fas fa-search search__icon" id="icon" onclick="toggleShow()"></i>
         </div>
     </section>
 
+    <section class="bottom center">
+        <div class="pure-g center">
+            <div class="pure-u-1-2 bottom-left-area">
 
-
-    <br>
-    <!-- cards to select levels -->
-    <section>
-        <div class="cardlevel">
-            <img id="hike" src="./assets/images/levels.jpg" ; width="600px" height="325px">
-            <h3 class="levelText"><strong>Levels</strong></h3>
-            <p class="levelPara">Set the level of your preferred hiking to Easy, Intermediate and Advance. This
-                feature
-                is designed for beginners to professional hikers. </p>
-            <button class="button-secondary pure-button" onclick="goToWorkpage()"> Select Level </button>
-
+            </div>
+            <div class="pure-u-1-2 bottom-right-area">
+                <div>
+                    <h3 class="levelText"><strong>Levels</strong></h3>
+                </div>
+                <div>
+                    <p class="levelPara">Set the level of your preferred hiking to Easy, Intermediate and Advance. This
+                        feature
+                        is designed for beginners to professional hikers. </p>
+                </div>
+                <div>
+                    <button onclick="goToWorkpage()" class="pure-button pure-button-primary button-secondary">Select Level</button>
+                </div>
+            </div>
         </div>
     </section>
 
     <script>
         function goToWorkpage() {
-            location.replace("https://jimmybubbles.github.io/group-project/levels.html")
+            location.replace("./levels.html")
         }
     </script>
 
