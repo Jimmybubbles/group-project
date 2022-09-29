@@ -1,6 +1,26 @@
 //card 2 load content without showing the cards
 
 // when the page loads hide the firstcard.
+function goToWorkpage() {
+    location.replace("levels.html")
+}
+
+function goToWorkpage1() {
+    location.replace("start.html")
+}
+
+function goToWorkpage2() {
+    location.replace("start.html")
+}
+
+function goToWorkpage3() {
+    location.replace("start.html")
+}
+
+function goToWorkpage4() {
+    location.replace("card2.html")
+}
+
 
 $(window).ready(function () {
     $("#firstcard").hide();
@@ -170,5 +190,5 @@ var polyline = L.polyline(latlngs, { color: 'blue' }).addTo(map);
 // zoom the map to the polyline
 map.fitBounds(polyline.getBounds());
 
-marker.bindPopup("<b>Hike destination</b>").openPopup();
+marker.bindPopup("<b>this is the hike</b>").openPopup();
 polyline.bindPopup();
